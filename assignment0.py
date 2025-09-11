@@ -1,6 +1,5 @@
-#preston metil // sec. 02 // 12/09/25
-
-x = input("5")
-y = input("10")
-print (x)
-print (y)
+#preston metil // sec: 02 // 9/12/25
+x = 2
+y = 4
+z = x * y
+print(f"The product of {x} and {y} is {z}!")
