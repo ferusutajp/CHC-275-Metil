@@ -22,8 +22,8 @@ sub1 = input("Enter your first subtraction number! " )
 sub2 = input("Enter your second subtraction number! " )
 sub1 = int(sub1)
 sub2 = int(sub2)
-#nil
-#nil
+difference = sub1 - sub2
+print(f"The difference of {sub1} and {sub2} is {difference}!")
 
 mult1 = input("Enter your first multiplication number! " )
 mult2 = input("Enter your second multiplication number! " )
@@ -36,5 +36,5 @@ div1 = input("Enter your first division number! " )
 div2 = input("Enter your second division number! " )
 div1 = int(div1)
 div2 = int(div2)
-#nil
-#nil
+quotient = div1 / div2
+print(f"The quotient of {div1} and {div2} is {quotient}")
