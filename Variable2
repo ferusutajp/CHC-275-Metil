@@ -1,0 +1,6 @@
+numsix = input("Enter number... ")
+numsix = int(numsix)
+lorkeez = input("Enter second number... ")
+lorkeez = int(lorkeez)
+sum = numsix + lorkeez
+print(f"The sum of {numsix} and {lorkeez} is {sum}! ")
