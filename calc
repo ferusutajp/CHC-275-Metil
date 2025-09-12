@@ -1,16 +1,5 @@
 # preston >
-
-"""
-FOUR FUNCTION CALCULATOR
-1. TAKE 2 NUMBERS
-2. WORK OUT ALL 4 OF THE FUNCTIONS
-    1. INDIVIDUAL FUNCTIONS
-        1. ADD
-        2. SUBTRACT
-        3. MULTIPLY
-        4. DIVIDE
-"""
-#Defining Variables
+#calc = short for calculator
 add1 = input("Enter your first addition number! ")
 add2 = input("Enter your second addition number! " )
 add1 = int(add1)
