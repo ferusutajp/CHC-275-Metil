@@ -20,6 +20,6 @@ if fish == "Carniviorous":
 elif fish == "Salt Water":
     print("Alright! Enjoy your fish.")
 elif fish == "Community":
-    print("Alright! Enjoy your fish.")
+    print("Alright! Enjoy your fish. But, you should probably get more than one...")
 else:
-    print("Boss thats not a type of fish that we have listed...")
+    print("Boss that's not a type of fish that we have listed...")
