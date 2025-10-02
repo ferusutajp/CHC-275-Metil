@@ -1,7 +1,11 @@
 # preston >
 # Bank.py -- Banking System
+# Sol Badguy Bank
 
 exitcondition = False
+
+peoplelist = ["Jack-O' Valentine", "Ashe Duran", "Hyde Kido", "Lukai Hwei", "Shinji Ikari"]
+moneylist = [300000, 17, 4000, 1, -1000]
 
 print("Welcome system administrator!")
 while exitcondition == False:
@@ -16,7 +20,7 @@ while exitcondition == False:
     System = input("System accessed... ")
     
     # Deposit Function
-    
+    if System == 
     
     # Quit Function
     if System == "Quit":
