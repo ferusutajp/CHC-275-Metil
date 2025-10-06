@@ -20,14 +20,64 @@ while exitcondition == False:
     System = input("System accessed... ")
     
     # Deposit Function
-    if System == "Deposit" or "deposit":
+    if System == "Deposit":
         print("Entering 'Despoit' system!")
         print(peoplelist)
-        depositname = input("Who's account would you like to deposit money into?")
+        depositname = input("Who's account would you like to deposit money into? ")
         if depositname == "Jack-O' Valentine":
             print("lalalalalala")
+        elif depositname == "Ashe Duran":
+            print("lalalalalala")
+        elif depositname == "Hyde Kido":
+            print("lalalalalala")
+        elif depositname == "Lukai Hwei":
+            print("lalalalalala")
+        elif depositname == "Shinji Ikari":
+            print("lalalalalala")
+        else:
+            print("Name not processed.")
+
+    # Withdraw Function
+    elif System == "Withdraw":
+        print("Entering 'Withdraw' system!")
+        print(peoplelist)
+        withdrawname = input("Who's account would you like to withdraw money from? ")
+        if withdrawname == "Jack-O' Valentine":
+            print("lalalalalala")
+        elif withdrawname == "Ashe Duran":
+            print("lalalalalala")
+        elif withdrawname == "Hyde Kido":
+            print("lalalalalala")
+        elif withdrawname == "Lukai Hwei":
+            print("lalalalalala")
+        elif withdrawname == "Shinji Ikari":
+            print("lalalalalala")
+        else:
+            print("Name not processed.")
+ 
+    # Add Function
+    elif System == "Add Account":
+        print("Entering 'Add' system!")
+        addedname = input("What is the name of the user you would like to add to the system? ")
+        addedvalue = input("How much money is being added to this account? ")
+        addedvalue = int(addedvalue)
+        peoplelist.append(addedname)
+        moneylist.append(addedvalue)
+        
+    # Remove Function
+    elif System == "Remove Account":
+        print("Entering 'Remove' system!")
+
+    # View Function
+    elif System == "List Balances":
+        print("Current account holders and balances.")
+        print(peoplelist)
+        print(moneylist)
 
     # Quit Function
-    if System == "Quit":
+    elif System == "Quit":
         print("Thank you for using our services!")
         exitcondition = True
+     
+    else:
+        print("That is not a supported system.")
