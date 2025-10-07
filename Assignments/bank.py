@@ -19,7 +19,7 @@ while exitcondition == False:
     print("7. Quit")
     System = input("System accessed... ")
     
-    # Deposit Function
+    # Deposit Function (REWORK)
     if System == "Deposit":
         print("Entering 'Despoit' system!")
         print(peoplelist)
@@ -37,7 +37,7 @@ while exitcondition == False:
         else:
             print("Name not processed.")
 
-    # Withdraw Function
+    # Withdraw Function (REWORK)
     elif System == "Withdraw":
         print("Entering 'Withdraw' system!")
         print(peoplelist)
@@ -67,6 +67,14 @@ while exitcondition == False:
     # Remove Function
     elif System == "Remove Account":
         print("Entering 'Remove' system!")
+        print(peoplelist)
+        removedname = input("What is the name of the user you would like to remove from the system? ")
+        if removedname in peoplelist:
+            index = peoplelist.index(removedname)
+            peoplelist.pop(index)
+            moneylist.pop(index)
+        else:
+            print("Name not processed.")
 
     # View Function
     elif System == "List Balances":
