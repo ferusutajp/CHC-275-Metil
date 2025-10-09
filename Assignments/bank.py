@@ -29,23 +29,15 @@ while exitcondition == False:
         depositamount = int(depositamount)
         moneylist[index] = moneylist[index] + depositamount
         
-    # Withdraw Function (REWORK)
-    elif System == "Withdraw":
+    # Withdraw Function
+    if System == "Withdraw":
         print("Entering 'Withdraw' system!")
         print(peoplelist)
         withdrawname = input("Who's account would you like to withdraw money from? ")
-        if withdrawname == "Jack-O' Valentine":
-            print("lalalalalala")
-        elif withdrawname == "Ashe Duran":
-            print("lalalalalala")
-        elif withdrawname == "Hyde Kido":
-            print("lalalalalala")
-        elif withdrawname == "Lukai Hwei":
-            print("lalalalalala")
-        elif withdrawname == "Shinji Ikari":
-            print("lalalalalala")
-        else:
-            print("Name not processed.")
+        windex = peoplelist.index(withdrawname)
+        withdrawamount = input("How much money would you like to add? ")
+        withdrawamount = int(withdrawamount)
+        moneylist[windex] = moneylist[windex] + depositamount
             
     # Transfer Function
  
