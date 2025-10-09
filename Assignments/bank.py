@@ -19,30 +19,16 @@ while exitcondition == False:
     print("7. Quit")
     System = input("System accessed... ")
     
-    """
-    # Deposit Function (REWORK)
+    # Deposit Function
     if System == "Deposit":
         print("Entering 'Despoit' system!")
         print(peoplelist)
         depositname = input("Who's account would you like to deposit money into? ")
-        if depositname == "Jack-O' Valentine":
-            print("lalalalalala")
-        elif depositname == "Ashe Duran":
-            print("lalalalalala")
-        elif depositname == "Hyde Kido":
-            print("lalalalalala")
-        elif depositname == "Lukai Hwei":
-            print("lalalalalala")
-        elif depositname == "Shinji Ikari":
-            print("lalalalalala")
-        else:
-            print("Name not processed.")
-    """
-    
-    # Deposit Function
-    if System == "Deposit":
+        index = peoplelist.index(depositname)
+        depositamount = input("How much money would you like to add? ")
+        depositamount = int(depositamount)
+        moneylist[index] = moneylist[index] + depositamount
         
-
     # Withdraw Function (REWORK)
     elif System == "Withdraw":
         print("Entering 'Withdraw' system!")
