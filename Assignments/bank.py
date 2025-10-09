@@ -19,6 +19,7 @@ while exitcondition == False:
     print("7. Quit")
     System = input("System accessed... ")
     
+    """
     # Deposit Function (REWORK)
     if System == "Deposit":
         print("Entering 'Despoit' system!")
@@ -36,6 +37,11 @@ while exitcondition == False:
             print("lalalalalala")
         else:
             print("Name not processed.")
+    """
+    
+    # Deposit Function
+    if System == "Deposit":
+        
 
     # Withdraw Function (REWORK)
     elif System == "Withdraw":
@@ -54,6 +60,8 @@ while exitcondition == False:
             print("lalalalalala")
         else:
             print("Name not processed.")
+            
+    # Transfer Function
  
     # Add Function
     elif System == "Add Account":
