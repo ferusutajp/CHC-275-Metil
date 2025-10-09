@@ -35,11 +35,12 @@ while exitcondition == False:
         print(peoplelist)
         withdrawname = input("Who's account would you like to withdraw money from? ")
         windex = peoplelist.index(withdrawname)
-        withdrawamount = input("How much money would you like to add? ")
+        withdrawamount = input("How much money would you like to remove? ")
         withdrawamount = int(withdrawamount)
-        moneylist[windex] = moneylist[windex] + depositamount
+        moneylist[windex] = moneylist[windex] - withdrawamount
             
     # Transfer Function
+    
  
     # Add Function
     elif System == "Add Account":
