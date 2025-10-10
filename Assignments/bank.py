@@ -30,7 +30,7 @@ while exitcondition == False:
         moneylist[index] = moneylist[index] + depositamount
         
     # Withdraw Function
-    if System == "Withdraw":
+    elif System == "Withdraw":
         print("Entering 'Withdraw' system!")
         print(peoplelist)
         withdrawname = input("Who's account would you like to withdraw money from? ")
@@ -40,6 +40,18 @@ while exitcondition == False:
         moneylist[windex] = moneylist[windex] - withdrawamount
             
     # Transfer Function
+    elif System == "Transfer":
+        print("Entering 'Transfer' system!")
+        print(peoplelist)
+        transfername1 = input("Who's account do you want to remove money from? ")
+        tindex = peoplelist.index(transfername1)
+        transferaamount = input("How much money do you want to transfer? ")
+        transferaamount = int(transferaamount)
+        transfername2 = input("Who's account do you want to add this money to? ")
+        tindex2 = peoplelist.index(transfername2)
+        moneylist[tindex] = moneylist[tindex] - transferaamount
+        moneylist[tindex2] = moneylist[tindex2] + transferaamount
+        
     
  
     # Add Function
