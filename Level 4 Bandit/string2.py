@@ -1,7 +1,7 @@
 # preston >
 
 newstring = "Goat1 Goat2 Goat3"
-# You can split the string inot a list of elements where each element is seperated by the whitespace
+# You can split the string into a list of elements where each element is seperated by the whitespace
 # .split()
 goats = newstring.split()
 print(goats)
