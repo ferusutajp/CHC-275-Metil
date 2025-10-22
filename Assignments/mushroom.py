@@ -1,9 +1,20 @@
 # preston >
 
 sizelist = []
+smallsizelist = []
+medsizelist = []
+largesizelist = []
 
-while x != "Checked":
-    check = input("Continue or Quit? ")
-    if check == "Quit":
-        x = "Checked"
-    size = input("What is the size of the mushroom? ")
+check = False
+
+while check == False:
+    msize = input("What is the size of the mushroom? (Or Quit) ")
+    if msize.isnumeric():
+        sizelist.append(msize)
+        if msize < 100:
+            
+    elif msize == "Quit".lower():
+        print(smallsizelist)
+        print(medsizelist)
+        print(largesizelist)
+        check = True
