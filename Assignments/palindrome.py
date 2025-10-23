@@ -4,11 +4,13 @@
 word = input("Enter your word: ")
 palidrome = False
 print(f"Your word is: {word}")
-print("Checking to see if your word is a palidrome!")
 
-#
+inverse = word[::-1]
+
+if inverse.strip().lower() == word.strip().lower():
+    palidrome = True
 
 if palidrome == True:
-    print("Your word is a palidrome!")
+    print(f"{word} is a palidrome!")
 elif palidrome == False:
-    print("Your word is not a palidrome!")
+    print(f"{word} is not a palidrome!")
