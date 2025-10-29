@@ -9,7 +9,7 @@ while check == True:
     print("4. Division")
     print("5. Quit")
     Function = str(input("Which function do you want to access? "))
-    if Function.lower() == "addition":
+    if Function.lower().strip() == "addition":
         try:
             xa = int(input("Enter first number: "))
             ya = int(input("Enter second number: "))
@@ -19,7 +19,7 @@ while check == True:
             print("ValueError -- Please input numeric values")
         except Exception as e:
             print(f"An error occurred: {e}")
-    elif Function.lower() == "subtraction":
+    elif Function.lower().strip() == "subtraction":
         try:
             xs = int(input("Enter first number: "))
             ys = int(input("Enter second number: "))
@@ -29,7 +29,7 @@ while check == True:
             print("ValueError -- Please input numeric values")
         except Exception as e:
             print(f"An error occurred: {e}")
-    elif Function.lower() == "multiplication":
+    elif Function.lower().strip() == "multiplication":
         try:
             xm = int(input("Enter first number: "))
             ym = int(input("Enter second number: "))
@@ -39,7 +39,7 @@ while check == True:
             print("ValueError -- Please input numeric values")
         except Exception as e:
             print(f"An error occurred: {e}")
-    elif Function.lower() == "division":
+    elif Function.lower().strip() == "division":
         try:
             xd = int(input("Enter first number: "))
             yd = int(input("Enter second number: "))
@@ -51,7 +51,7 @@ while check == True:
             print("ZeroDivisionError -- Cannot divide by zero")
         except Exception as e:
             print(f"An error occurred: {e}")
-    elif Function.lower() == "quit":
+    elif Function.lower().strip() == "quit":
         check = False
         print("Calculator closed")
     else:
