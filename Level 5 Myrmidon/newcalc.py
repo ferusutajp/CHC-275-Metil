@@ -17,6 +17,8 @@ while check == True:
             print(ResultAdd)
         except ValueError:
             print("ValueError -- Please input numeric values")
+        except Exception as e:
+            print(f"An error occurred: {e}")
     elif Function.lower() == "subtraction":
         try:
             xs = int(input("Enter first number: "))
@@ -25,6 +27,8 @@ while check == True:
             print(ResultSub)
         except ValueError:
             print("ValueError -- Please input numeric values")
+        except Exception as e:
+            print(f"An error occurred: {e}")
     elif Function.lower() == "multiplication":
         try:
             xm = int(input("Enter first number: "))
@@ -33,6 +37,8 @@ while check == True:
             print(ResultMul)
         except ValueError:
             print("ValueError -- Please input numeric values")
+        except Exception as e:
+            print(f"An error occurred: {e}")
     elif Function.lower() == "division":
         try:
             xd = int(input("Enter first number: "))
@@ -43,6 +49,8 @@ while check == True:
             print("ValueError -- Please input numeric values")
         except ZeroDivisionError:
             print("ZeroDivisionError -- Cannot divide by zero")
+        except Exception as e:
+            print(f"An error occurred: {e}")
     elif Function.lower() == "quit":
         check = False
         print("Calculator closed")
