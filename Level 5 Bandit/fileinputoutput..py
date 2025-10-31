@@ -38,6 +38,13 @@ for line in file:
     line = line.split(",")
     name.append[0]
     grade.append[1]
+    
+try:
+    for i in range(len(grade)):
+        grade[i] = int(grade[i])
+except ValueError:
+    print("Grades gotta be a number boss man...")
+
 print(name)
 print(grade)
 file.close
