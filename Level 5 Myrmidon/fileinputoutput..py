@@ -26,6 +26,12 @@ We covered exception handling for one particular reaason:
 file = open("names.txt", "r")
 # Variable = open("<filename">, "<mode>")
 names = file.readlines()
-# readlines takes our list of names and make each line ana item inside our list
+# readlines -- takes our list of names and make each line ana item inside our list
 print(names)
-file.clos
+file.close
+
+""" 
+
+What if we wanted to have names and grade in the class
+
+"""
