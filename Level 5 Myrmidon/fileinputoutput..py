@@ -23,12 +23,17 @@ We covered exception handling for one particular reaason:
 # Use close function when we are finished:
     # The buffered memory can be removed from memory, as to not take up space
 
-file = open("names.txt", "r")
+buffer = open("names.txt", "r")
 # Variable = open("<filename">, "<mode>")
-names = file.readlines()
+names = []
+grades = []
+fullname = buffer.readlines()
 # readlines -- takes our list of names and make each line ana item inside our list
 print(names)
-file.close
+for i in range(len(buffer)):
+    names[i] = names[i].strip()
+print(names)
+buffer.close
 
 """ 
 
