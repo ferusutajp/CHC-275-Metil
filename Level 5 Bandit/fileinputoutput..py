@@ -28,16 +28,16 @@ name = []
 grade = []
 # Variable = open("<filename">, "<mode>")
 names = file.readlines()
-# readlines -- takes our list of names and make each line ana item inside our list
+# readlines -- takes our list of names and make each line an item inside our list
 print(names)
 for i in range(len(names)):
     names[i] = names[i].strip()
 print(names)
-for line in file:
-    line = line.strip
+for line in names:
+    line = line.strip()
     line = line.split(",")
-    name.append[0]
-    grade.append[1]
+    name.append(line[0])
+    grade.append(line[1])
     
 try:
     for i in range(len(grade)):
