@@ -32,6 +32,6 @@ file.close
 
 """ 
 
-What if we wanted to have names and grade in the class
+What if we wanted to have names and grade in the class?
 
 """
