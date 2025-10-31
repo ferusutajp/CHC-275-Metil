@@ -23,20 +23,21 @@ We covered exception handling for one particular reaason:
 # Use close function when we are finished:
     # The buffered memory can be removed from memory, as to not take up space
 
-buffer = open("names.txt", "r")
+file = open("names.txt", "r")
+name = []
+grade = []
 # Variable = open("<filename">, "<mode>")
-names = []
-grades = []
-fullname = buffer.readlines()
+names = file.readlines()
 # readlines -- takes our list of names and make each line ana item inside our list
 print(names)
-for i in range(len(buffer)):
+for i in range(len(names)):
     names[i] = names[i].strip()
 print(names)
-buffer.close
-
-""" 
-
-What if we wanted to have names and grade in the class?
-
-"""
+for line in file:
+    line = line.strip
+    line = line.split(",")
+    name.append[0]
+    grade.append[1]
+print(name)
+print(grade)
+file.close
