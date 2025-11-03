@@ -48,3 +48,35 @@ except ValueError:
 print(name)
 print(grade)
 file.close
+
+""" 
+
+We can read from a file,
+What about writing into a file?
+
+"""
+
+name.append("Sol")
+grade.append(100)
+print(name)
+print(grade)
+
+name.append("Ky")
+grade.append(115)
+print(name)
+print(grade)
+
+file = open("names.txt", "a") # This will open the file in write mode
+# Python writemode on a file completely overwrites the file
+
+buffer = []
+# We want lines to look like {name}, {grade}\n
+# Each object in the parallel lists have the same index
+
+for i in range(len(name)):
+    line = f"{name[i]}, {grade[i]}\n"
+    buffer.append(line)
+
+buffer[-1] = buffer[-1].strip()
+
+print(buffer)
