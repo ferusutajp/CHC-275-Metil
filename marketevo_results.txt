@@ -1,0 +1,16 @@
+Stock market report for Microsoft (MSFT), Amazon (AMZN), and Nvidia (NVDA):
+
+Day 1-20 Averages:
+MSFT average: 397.85
+AMZN average: 399.45
+NVDA average: 390.75
+
+Day 21-40 Averages:
+MSFT average: 395.6
+AMZN average: 400.4
+NVDA average: 396.2
+
+AMZN is trending upwards, purchase reccommended.
+NVDA is trending upwards, purchase reccommended.
+
+Conclusion of report.
